@@ -21,8 +21,10 @@
                 <!-- Desktop Menu -->
                 <div class="desktop-menu hidden md:flex space-x-8">
                     <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
                     <a href="#blog" class="nav-link">Blog</a>
                     <a href="#isk-achievements" class="nav-link">Achievements</a>
+                    <a href="#projects" class="nav-link">Projects</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </div>
                 
@@ -39,8 +41,10 @@
             <div class="mobile-menu md:hidden bg-gray-900 bg-opacity-90 mt-4 rounded-lg">
                 <div class="flex flex-col space-y-4 p-4">
                     <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
                     <a href="#blog" class="nav-link">Blog</a>
                     <a href="#isk-achievements" class="nav-link">Achievements</a>
+                    <a href="#projects" class="nav-link">Projects</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </div>
             </div>
@@ -56,6 +60,43 @@
             </h1>
             <p class="hero-subtitle">Sharing Knowledge in English, Tech & Life</p>
             <button class="btn-neon mt-8" onclick="window.open('https://t.me/lazyprogrammer1')">Join Telegram</button>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">About Me</h2>
+            
+            <div class="isk-about-container">
+                <div class="isk-about-card fade-up">
+                    <div class="isk-about-image-container">
+                        <img src="https://source.unsplash.com/random/600x600/?developer,programmer" alt="Abdulvaliy - Software Developer" class="isk-about-image">
+                    </div>
+                    <div class="isk-about-content">
+                        <h3 class="isk-about-title">Abdulvaliy</h3>
+                        <p class="isk-about-subtitle">Full Stack Developer & Tech Enthusiast</p>
+                        <div class="isk-about-text">
+                            <p>Hello! I'm Abdulvaliy, a passionate software developer with a love for creating innovative web solutions and sharing knowledge with the tech community. With expertise in modern web technologies, I specialize in building scalable applications that solve real-world problems.</p>
+                            <p>My journey in technology began with curiosity and has evolved into a career focused on continuous learning and growth. I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends and best practices.</p>
+                            <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing insights through my blog. I'm always excited to collaborate on interesting projects and connect with fellow developers.</p>
+                        </div>
+                        <div class="isk-about-skills">
+                            <h4 class="isk-skills-title">Skills & Technologies</h4>
+                            <div class="isk-skills-grid">
+                                <span class="isk-skill-tag">JavaScript</span>
+                                <span class="isk-skill-tag">React</span>
+                                <span class="isk-skill-tag">Node.js</span>
+                                <span class="isk-skill-tag">Python</span>
+                                <span class="isk-skill-tag">MongoDB</span>
+                                <span class="isk-skill-tag">PostgreSQL</span>
+                                <span class="isk-skill-tag">AWS</span>
+                                <span class="isk-skill-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -191,6 +232,105 @@
                         <h3 class="isk-achievement-title">Tech Mentor</h3>
                         <p class="isk-achievement-description">Successfully mentored 100+ junior developers through coding bootcamps and online learning programs.</p>
                         <button class="isk-more-btn" onclick="showToast('Achievement details coming soon!', 'success')">More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">My Projects</h2>
+            
+            <div class="isk-projects-grid">
+                <!-- Project Card 1 -->
+                <div class="isk-project-card fade-up">
+                    <img src="https://source.unsplash.com/random/800x600/?ecommerce,website" alt="E-Commerce Platform" class="isk-project-img">
+                    <div class="isk-project-content">
+                        <h3 class="isk-project-title">E-Commerce Platform</h3>
+                        <p class="isk-project-description">A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.</p>
+                        <div class="isk-project-tech">
+                            <span class="isk-tech-tag">React</span>
+                            <span class="isk-tech-tag">Node.js</span>
+                            <span class="isk-tech-tag">MongoDB</span>
+                        </div>
+                        <button class="isk-view-more-btn" onclick="showToast('Project details coming soon!', 'success')">View More</button>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="isk-project-card fade-up">
+                    <img src="https://source.unsplash.com/random/800x600/?dashboard,analytics" alt="Analytics Dashboard" class="isk-project-img">
+                    <div class="isk-project-content">
+                        <h3 class="isk-project-title">Analytics Dashboard</h3>
+                        <p class="isk-project-description">Real-time data visualization dashboard with interactive charts and customizable widgets. Built with Vue.js and D3.js for powerful data insights.</p>
+                        <div class="isk-project-tech">
+                            <span class="isk-tech-tag">Vue.js</span>
+                            <span class="isk-tech-tag">D3.js</span>
+                            <span class="isk-tech-tag">Python</span>
+                        </div>
+                        <button class="isk-view-more-btn" onclick="showToast('Project details coming soon!', 'success')">View More</button>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3 -->
+                <div class="isk-project-card fade-up">
+                    <img src="https://source.unsplash.com/random/800x600/?mobile,app" alt="Mobile Task Manager" class="isk-project-img">
+                    <div class="isk-project-content">
+                        <h3 class="isk-project-title">Mobile Task Manager</h3>
+                        <p class="isk-project-description">Cross-platform mobile application for task management with offline capabilities, push notifications, and team collaboration features.</p>
+                        <div class="isk-project-tech">
+                            <span class="isk-tech-tag">React Native</span>
+                            <span class="isk-tech-tag">Firebase</span>
+                            <span class="isk-tech-tag">Redux</span>
+                        </div>
+                        <button class="isk-view-more-btn" onclick="showToast('Project details coming soon!', 'success')">View More</button>
+                    </div>
+                </div>
+                
+                <!-- Project Card 4 -->
+                <div class="isk-project-card fade-up">
+                    <img src="https://source.unsplash.com/random/800x600/?ai,machine-learning" alt="AI Chat Assistant" class="isk-project-img">
+                    <div class="isk-project-content">
+                        <h3 class="isk-project-title">AI Chat Assistant</h3>
+                        <p class="isk-project-description">Intelligent chatbot powered by machine learning algorithms. Provides customer support, answers queries, and learns from user interactions.</p>
+                        <div class="isk-project-tech">
+                            <span class="isk-tech-tag">Python</span>
+                            <span class="isk-tech-tag">TensorFlow</span>
+                            <span class="isk-tech-tag">Flask</span>
+                        </div>
+                        <button class="isk-view-more-btn" onclick="showToast('Project details coming soon!', 'success')">View More</button>
+                    </div>
+                </div>
+                
+                <!-- Project Card 5 -->
+                <div class="isk-project-card fade-up">
+                    <img src="https://source.unsplash.com/random/800x600/?social,network" alt="Social Media Platform" class="isk-project-img">
+                    <div class="isk-project-content">
+                        <h3 class="isk-project-title">Social Media Platform</h3>
+                        <p class="isk-project-description">A social networking platform with real-time messaging, photo sharing, and community features. Built with modern web technologies.</p>
+                        <div class="isk-project-tech">
+                            <span class="isk-tech-tag">Next.js</span>
+                            <span class="isk-tech-tag">Socket.io</span>
+                            <span class="isk-tech-tag">PostgreSQL</span>
+                        </div>
+                        <button class="isk-view-more-btn" onclick="showToast('Project details coming soon!', 'success')">View More</button>
+                    </div>
+                </div>
+                
+                <!-- Project Card 6 -->
+                <div class="isk-project-card fade-up">
+                    <img src="https://source.unsplash.com/random/800x600/?blockchain,crypto" alt="Blockchain Wallet" class="isk-project-img">
+                    <div class="isk-project-content">
+                        <h3 class="isk-project-title">Blockchain Wallet</h3>
+                        <p class="isk-project-description">Secure cryptocurrency wallet with multi-coin support, transaction history, and real-time market data integration.</p>
+                        <div class="isk-project-tech">
+                            <span class="isk-tech-tag">Web3.js</span>
+                            <span class="isk-tech-tag">Solidity</span>
+                            <span class="isk-tech-tag">Ethereum</span>
+                        </div>
+                        <button class="isk-view-more-btn" onclick="showToast('Project details coming soon!', 'success')">View More</button>
                     </div>
                 </div>
             </div>
