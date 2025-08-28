@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulvaliy's Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="logo text-2xl">Abdulvaliy's Blog</div>
+                
+                <!-- Desktop Menu -->
+                <div class="desktop-menu hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="achievements.html" class="nav-link">Achievements</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Mobile Hamburger -->
+                <div class="hamburger md:hidden">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu md:hidden bg-gray-900 bg-opacity-90 mt-4 rounded-lg">
+                <div class="flex flex-col space-y-4 p-4">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="achievements.html" class="nav-link">Achievements</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="hero-title">
+                <span id="typing-text">Welcome to Abdulvaliy's Blog</span>
+                <span class="typing"></span>
+            </h1>
+            <p class="hero-subtitle">Sharing Knowledge in English, Tech & Life</p>
+            <button class="btn-neon mt-8" onclick="window.open('https://t.me/lazyprogrammer1')">Join Telegram</button>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section id="blog" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Latest Posts</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Card 1 -->
+                <div class="card fade-up">
+                    <img src="/assets/web-development.jpg" alt="Tech" class="card-img">
+                    <div class="p-6">
+                        <h3 class="card-title text-xl font-bold mb-2">The Future of Web Development</h3>
+                        <p class="text-gray-300 mb-4">Exploring the latest trends and technologies shaping the future of web development in 2025.</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 transition">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 2 -->
+                <div class="card fade-up">
+                    <img src="/assets/javascript.jpg" alt="Programming" class="card-img">
+                    <div class="p-6">
+                        <h3 class="card-title text-xl font-bold mb-2">JavaScript Best Practices</h3>
+                        <p class="text-gray-300 mb-4">Essential JavaScript patterns and practices every developer should know in 2025.</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 transition">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 3 -->
+                <div class="card fade-up">
+                    <img src="/assets/ai-machine.png" alt="AI" class="card-img">
+                    <div class="p-6">
+                        <h3 class="card-title text-xl font-bold mb-2">AI in Everyday Life</h3>
+                        <p class="text-gray-300 mb-4">How artificial intelligence is transforming our daily routines and what to expect next.</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 transition">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 4 -->
+                <div class="card fade-up">
+                    <img src="/assets/clean-code.jpg" alt="Coding" class="card-img">
+                    <div class="p-6">
+                        <h3 class="card-title text-xl font-bold mb-2">Clean Code Principles</h3>
+                        <p class="text-gray-300 mb-4">Writing maintainable and efficient code that stands the test of time.</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 transition">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 5 -->
+                <div class="card fade-up">
+                    <img src="/assets/startup projects.jpg" alt="Startup" class="card-img">
+                    <div class="p-6">
+                        <h3 class="card-title text-xl font-bold mb-2">Building a Tech Startup</h3>
+                        <p class="text-gray-300 mb-4">Lessons learned from building a successful tech company from scratch.</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 transition">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Card 6 -->
+                <div class="card fade-up">
+                    <img src="/assets/ui-ux design.jpg" alt="Design" class="card-img">
+                    <div class="p-6">
+                        <h3 class="card-title text-xl font-bold mb-2">UI/UX Trends 2025</h3>
+                        <p class="text-gray-300 mb-4">The most exciting design trends that will dominate the digital landscape next year.</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 transition">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sidebar & Main Content -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Main Content -->
+                <div class="lg:w-2/3">
+                    <div class="card p-8">
+                        <h2 class="text-2xl font-bold mb-6">Featured Post: The Art of Learning</h2>
+                        <img src="/assets/art-of-learning.jpg" alt="Learning" class="w-full h-64 object-cover mb-6 rounded-lg">
+                        <p class="text-gray-300 mb-4">In today's rapidly evolving world, the ability to learn effectively is more valuable than ever. The most successful individuals aren't necessarily those with the highest IQs, but rather those who have mastered the art of learning.</p>
+                        <p class="text-gray-300 mb-4">Neuroscience research has shown that our brains are far more malleable than previously thought. This concept, known as neuroplasticity, means we can continue to form new neural connections and improve our cognitive abilities throughout our lives.</p>
+                        <p class="text-gray-300 mb-6">The key to effective learning lies in understanding how our brains process and retain information. Techniques like spaced repetition, active recall, and interleaving practice can dramatically improve retention and understanding.</p>
+                        <a href="#" class="btn-neon inline-block">Read Full Article</a>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="lg:w-1/3">  
+                    <!-- About Me -->
+                    <div class="sidebar p-6 mb-8">
+                        <h3 class="sidebar-title text-xl font-bold">About Me</h3>
+                        <img src="/assets/me.jpg" alt="Profile" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <p class="text-gray-300 mb-4">Hi, I'm Abdulvaliy. I'm a passionate developer, writer, and lifelong learner. This blog is where I share my thoughts on technology, programming, and personal growth.</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://twitter.com/Abdulvaliy0110" class="text-blue-400 hover:text-blue-300 transition">Twitter</a>
+                            <a href="https://github.com/Abdulvaliy10" class="text-blue-400 hover:text-blue-300 transition">GitHub</a>
+                            <a href="https://www.linkedin.com/in/abdulvaliy" class="text-blue-400 hover:text-blue-300 transition">LinkedIn</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div class="sidebar p-6 mb-8">
+                        <h3 class="sidebar-title text-xl font-bold">Categories</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-blue-400 hover:text-blue-300 transition">Technology</a></li>
+                            <li><a href="#" class="text-blue-400 hover:text-blue-300 transition">Programming</a></li>
+                            <li><a href="#" class="text-blue-400 hover:text-blue-300 transition">Productivity</a></li>
+                            <li><a href="#" class="text-blue-400 hover:text-blue-300 transition">Personal Growth</a></li>
+                            <li><a href="#" class="text-blue-400 hover:text-blue-300 transition">Career Advice</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Popular Posts -->
+                    <div class="sidebar p-6">
+                        <h3 class="sidebar-title text-xl font-bold">Popular Posts</h3>
+                        <div class="space-y-4 mt-4">
+                            <div>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 transition">10 Tips for Better JavaScript Code</a>
+                                <p class="text-sm text-gray-400">May 15, 2025</p>
+                            </div>
+                            <div>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 transition">The Complete Guide to React Hooks</a>
+                                <p class="text-sm text-gray-400">April 28, 2025</p>
+                            </div>
+                            <div>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 transition">How to Stay Productive as a Developer</a>
+                                <p class="text-sm text-gray-400">March 12, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Get In Touch</h2>
+            
+            <div class="max-w-2xl mx-auto card p-8">
+<form id="contactForm">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+            <label for="name" class="block text-gray-300 mb-2">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:border-blue-500 transition" required>
+        </div>
+        <div>
+            <label for="email" class="block text-gray-300 mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:border-blue-500 transition" required>
+        </div>
+    </div>
+    <div class="mb-6">
+        <label for="message" class="block text-gray-300 mb-2">Message</label>
+        <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:border-blue-500 transition" required></textarea>
+    </div>
+    <button type="submit" class="btn-neon">Send Message</button>
+</form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://twitter.com/Abdulvaliy0110" class="text-gray-400 hover:text-white transition">Twitter</a>
+                <a href="https://github.com/Abdulvaliy10" class="text-gray-400 hover:text-white transition">GitHub</a>
+                <a href="https://www.linkedin.com/in/abdulvaliy" class="text-gray-400 hover:text-white transition">LinkedIn</a>
+                <a href="https://t.me/lazyprogrammer1" class="text-gray-400 hover:text-white transition">Telegram</a>
+            </div>
+            <p class="text-gray-400">© 2025 Abdulvaliy's Blog. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Toast container -->
+       <div id="toast-container" class="fixed top-5 right-5 space-y-2 z-50"></div>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
