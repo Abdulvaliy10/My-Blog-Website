@@ -405,11 +405,11 @@ footer p {
     width: 100%;
   }
   #home .about-detail .desc {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 #home .about-detail .title {
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 3px;
 }
 #home .about-detail .desc {
@@ -722,6 +722,11 @@ footer p {
   background: #1e90ff;
   background: linear-gradient(to left, #1e90ff, #00d2ff);
 }
+
+.thumbnail {
+  border: 1px solid #d5d1d1;
+}
+
 @media (min-width: 768px) {
   .article-buttons {
     position: sticky;
